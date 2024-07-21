@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Avenir, serif;
+  transition: opacity 1s ease;
+  color: #8f8f8f;
+}
+
+p,h1, h2,h3 ,h4{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-family: Avenir, serif;
+  transition: opacity 1s ease;
+  color: #b7b7b7;
+}
+
+
+/* Apply styles to the header */
+header {
+  background-color: black;
+  color: #212121;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.bio-max {
+  text-align: center;
+}
+
+
+
+/* Style the navigation buttons */
+nav a {
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  background-color: black;
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px,
+  rgba(73, 136, 245, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.card {
+  width: 175px;
+  height: 200px;
+  border-radius: 30px;
+  background: #111111;
+  box-shadow: 15px 15px 30px rgb(0, 0, 0),
+  -15px -15px 30px rgb(0, 0, 0);
+}
+
+buttonlink {
+  color: #ffffff;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: rgb(35, 35, 35);
+  cursor: pointer;
+  border: 1px solid rgb(35, 35, 35);
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0), -6px -6px 12px rgba(0, 0, 0, 0);
+}
+
+buttonlink:hover {
+  border: 1px solid #2D2D2DFF;
+  background: #2d2d2d;
+}
+
+buttonlink:active {
+  box-shadow: 4px 4px 12px #000000, -4px -4px 12px #000000;
+}
+
+.instagram-logo {
+  position: absolute;
+  top: 45%;
+  left: 28px;
+  width: 45px;
+  height: auto;
+}
+
+.social {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social .social-item {
+  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .social-item .social-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+  translate(0, 0);
+  transition: all 0.4s ease;
+}
+
+.social .social-item .social-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  height: 100%;
+  width: 10px;
+  background: #b1b1b1;
+  transition: all 0.4s ease;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.social .social-item .social-link::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  height: 10px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: all 0.4s ease;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.social .social-item .social-link:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(5px, -5px);
+  box-shadow: -20px 20px 10px rgba(73, 136, 245, 0.35);
+}
+
+.social .social-item:nth-child(1) a {
+  color: rgb(0, 0, 0);
+}
+
+.social .social-item:nth-child(1):hover a {
+  background: rgba(215, 215, 215, 0.17);
+}
+
+.social .social-item:nth-child(1):hover a::before {
+  background: rgba(215, 215, 215, 0.17);
+}
+
+.social .social-item:nth-child(1):hover a::after {
+  background: rgba(215, 215, 215, 0.17);
+}
+
+.social .social-item:nth-child(2) a {
+  color: rgb(55, 106, 238);
+}
+
+.social .social-item:nth-child(2):hover a {
+  background: rgba(73, 136, 245, 0.5);
+}
+
+.social .social-item:nth-child(2):hover a::before {
+  background: rgba(73, 136, 245, 0.5);
+}
+
+.social .social-item:nth-child(2):hover a::after {
+  background: rgba(73, 136, 245, 0.5);
+}
+
+.social .social-item:nth-child(3) a {
+  color: #dd4b39;
+}
+
+.social .social-item:nth-child(3):hover a {
+  background: #dd4b39;
+}
+
+.social .social-item:nth-child(3):hover a::before {
+  background: #dd4b39;
+}
+
+.social .social-item:nth-child(3):hover a::after {
+  background: #dd4b39;
+}
+
+.social .social-item:nth-child(4) a {
+  color: #e4405f;
+}
+
+.social .social-item:nth-child(4):hover a {
+  background: #e4405f;
+}
+
+.social .social-item:nth-child(4):hover a::before {
+  background: #e4405f;
+}
+
+.social .social-item:nth-child(4):hover a::after {
+  background: #e4405f;
+}
+
+.social .social-item .social-link:hover {
+  color: #ffffff;
+}
+
+.social {
+  animation: slide 1s;
+}
+
+.name {
+  animation: slide 1s;
+}
+.bio-max {
+  animation: slide 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translatey(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
