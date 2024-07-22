@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: Avenir, serif;
+  font-family: Verdana, sans-serif;
   transition: opacity 1s ease;
   color: #8f8f8f;
 }
@@ -16,7 +16,7 @@ p,h1, h2,h3 ,h4{
   margin: 0;
   padding: 0;
   background-color: transparent;
-  font-family: Avenir, serif;
+  font-family: Verdana, sans-serif;
   transition: opacity 1s ease;
   color: #b7b7b7;
 }
@@ -107,14 +107,7 @@ buttonlink:active {
   box-shadow: 4px 4px 12px #000000, -4px -4px 12px #000000;
 }
 
-.instagram-logo {
-  position: absolute;
-  top: 45%;
-  left: 28px;
-  width: 45px;
-  height: auto;
-}
-
+/* Main page social links */
 .social {
   margin: 0;
   list-style: none;
@@ -249,11 +242,25 @@ buttonlink:active {
   animation: slide 1s;
 }
 
-.name {
+.title {
   animation: slide 1s;
+  text-align: center;
+  margin-top: 50px;
 }
 .bio-max {
+  max-width: 500px;
+  margin: 0 auto;
   animation: slide 1s;
+}
+.bio {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fadeIn {
