@@ -22,17 +22,25 @@ To set up the project locally, follow these steps:
 3. **Install dependencies:**
    `npm install`
 
+## Netlify Preview Deployment
+When you open a pull request (PR), Netlify automatically deploys a preview of your changes. This allows you to see how your updates will look before they are merged. 
+
+1. **Push your changes to a new branch**.
+2. **Open a pull request** against the main branch.
+3. Netlify will generate a unique preview URL for your PR, which you can view in the Netlify dashboard or directly from the PR comments.
+
+Review the preview to ensure everything looks as expected before merging your changes.
+
 ## License
 This project is licensed under the MIT License. You can find the full license text in the [LICENSE](LICENSE.txt) file.
 
 ## Contributing
 Contributions are welcome! If you have any ideas, suggestions, or issues, please open an issue or submit a pull request.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a pull request
+1. Create your feature branch (`git checkout -b feature/your-feature`)
+2. Commit your changes (`git commit -m 'Add your feature'`)
+3. Push to the branch (`git push origin feature/your-feature`)
+4. Open a pull request
 
 ## Contact
 If you have any questions or would like to get in touch, please reach out to me at [aad3m](mailto:aliadem0205@gmail.com).
