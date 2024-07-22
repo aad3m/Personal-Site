@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cdcc0431-5bcd-4612-841f-6d2afdf21d9e/deploy-status)](https://app.netlify.com/sites/aad3m/deploys)
+
 # Personal Site
 Welcome to the repository for my personal site! This site serves as a portfolio, blog, and personal space where I share my projects, thoughts, and more.
 
