@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #151515;
   font-family: Verdana, sans-serif;
   transition: opacity 1s ease;
   color: #8f8f8f;
@@ -131,7 +131,7 @@ nav {
 }
 .button-container {
   display: flex;
-  background-color: black;
+  background-color: #151515;
   width: 250px;
   height: 40px;
   align-items: center;
