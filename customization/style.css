@@ -17,16 +17,16 @@ p,h1, h2,h3 ,h4{
   padding: 0;
   background-color: transparent;
   font-family: Verdana, sans-serif;
-  transition: opacity 1s ease;
+  animation: 1s;
   color: #b7b7b7;
 }
 
 
+
 /* Apply styles to the header */
 header {
-  background-color: black;
-  color: #212121;
-  padding: 20px;
+  background-color: transparent;
+  color: transparent;
   text-align: center;
 
 }
@@ -41,7 +41,94 @@ header {
 nav a {
   text-decoration: none;
 }
+nav {
+  padding: 1rem;
+  display: flex;
+  background-color: transparent;
+}
 
+.ham-menu {
+  height: 24px;
+  width: 24px;
+  margin-left: auto;
+  position: relative;
+  display: none; /* Hide by default */
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: #575757;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(2) {
+  top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+.header .button-container {
+  display: none; /* Hide by default */
+}
+.header .menu-icon {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  position: absolute;
+  left: 12px;
+}
+.header .menu-icon svg {
+  fill: #fff;
+}
+@media (max-width: 768px) {
+  .ham-menu {
+    display: block; /* Show ham-menu on small screens */
+  }
+  .header .menu-icon {
+    display: block; /* Show menu-icon on small screens */
+  }
+  .header .button-container {
+    display: none; /* Keep button-container hidden */
+  }
+}
+.ham-menu.active + .button-container {
+  display: flex; /* Show button-container when ham-menu is active */
+}
+.header .button-container {
+  display: none;
+}
+.header .menu-icon {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+}
+.header .menu-icon svg {
+  fill: #fff;
+}
+@media (min-width: 768px) {
+  .header .button-container {
+    display: flex
+  }
+  .header .menu-icon {
+    display: flex;
+  }
+
+}
 .button-container {
   display: flex;
   background-color: black;
@@ -75,39 +162,6 @@ nav a {
   transform: translateY(-3px);
 }
 
-.icon {
-  font-size: 20px;
-}
-
-.card {
-  width: 175px;
-  height: 200px;
-  border-radius: 30px;
-  background: #111111;
-  box-shadow: 15px 15px 30px rgb(0, 0, 0),
-  -15px -15px 30px rgb(0, 0, 0);
-}
-
-buttonlink {
-  color: #ffffff;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: rgb(35, 35, 35);
-  cursor: pointer;
-  border: 1px solid rgb(35, 35, 35);
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0), -6px -6px 12px rgba(0, 0, 0, 0);
-}
-
-buttonlink:hover {
-  border: 1px solid #2D2D2DFF;
-  background: #2d2d2d;
-}
-
-buttonlink:active {
-  box-shadow: 4px 4px 12px #000000, -4px -4px 12px #000000;
-}
 
 /* Main page social links */
 .social {
@@ -127,6 +181,7 @@ buttonlink:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slide 2s;
 }
 
 .social .social-item .social-link {
@@ -240,14 +295,17 @@ buttonlink:active {
   color: #ffffff;
 }
 
-.social {
-  animation: slide 1s;
-}
-
 .title {
   animation: slide 1s;
   text-align: center;
   margin-top: 50px;
+}
+.pinned-projects {
+  animation: slide 1s;
+  position: absolute;
+  text-align: center;
+  margin-top: 110px;
+  margin-left: 42%;
 }
 .bio-max {
   max-width: 500px;
