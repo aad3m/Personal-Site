@@ -19,8 +19,10 @@ To set up the project locally, follow these steps:
     `git clone https://github.com/aad3m/Personal-Site.git`
 2. **Navigate to the project directory:**  
    `cd Personal-Site`
-3. **Install dependencies:**
+3. **Install dependencies:**  
    `npm install`
+4. **Start the server:**  
+   `npm start`
 
 ## Netlify Preview Deployment
 When you open a pull request (PR), Netlify automatically deploys a preview of your changes. This allows you to see how your updates will look before they are merged. 
