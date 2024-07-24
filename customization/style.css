@@ -7,16 +7,18 @@ body {
   margin: 0;
   padding: 0;
   background-color: #151515;
-  font-family: Verdana, sans-serif;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   transition: opacity 1s ease;
   color: #8f8f8f;
+  display: grid;
+  place-items: center;
 }
 
 p,h1, h2,h3 ,h4{
   margin: 0;
-  padding: 0;
+  padding: 2%;
   background-color: transparent;
-  font-family: Verdana, sans-serif;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   animation: 1s;
   color: #b7b7b7;
 }
@@ -50,96 +52,106 @@ nav {
 .ham-menu {
   height: 24px;
   width: 24px;
-  margin-left: auto;
-  position: relative;
-  display: none; /* Hide by default */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  cursor: pointer;
 }
+
 .ham-menu span {
   height: 5px;
   width: 100%;
   background-color: #575757;
   border-radius: 25px;
   position: absolute;
+  left: 0;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: .3s ease;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
 }
+
 .ham-menu span:nth-child(1) {
   top: 25%;
 }
+
 .ham-menu span:nth-child(2) {
+  top: 50%;
+}
+
+.ham-menu span:nth-child(3) {
   top: 75%;
 }
+
 .ham-menu.active span:nth-child(1) {
   top: 50%;
-  transform: translate(-50%,-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
+
 .ham-menu.active span:nth-child(2) {
   opacity: 0;
 }
+
 .ham-menu.active span:nth-child(3) {
   top: 50%;
-  transform: translate(-50%,-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
+
 .header .button-container {
-  display: none; /* Hide by default */
-}
-.header .menu-icon {
-  display: none; /* Hide by default */
-  cursor: pointer;
+  display: none;
+  flex-direction: column;
   position: absolute;
-  left: 12px;
+  top: 3rem;
+  right: 1rem;
+  background-color: #151515;
+  border-radius: 10px;
 }
+
+.header .menu-icon {
+  display: none;
+}
+
 .header .menu-icon svg {
   fill: #fff;
 }
+
 @media (max-width: 768px) {
   .ham-menu {
-    display: block; /* Show ham-menu on small screens */
-  }
-  .header .menu-icon {
-    display: block; /* Show menu-icon on small screens */
+    display: block;
   }
   .header .button-container {
-    display: none; /* Keep button-container hidden */
+    display: none;
   }
 }
+
 .ham-menu.active + .button-container {
-  display: flex; /* Show button-container when ham-menu is active */
+  display: flex;
 }
+
 .header .button-container {
   display: none;
 }
-.header .menu-icon {
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  left: 10px;
-}
-.header .menu-icon svg {
-  fill: #fff;
-}
+
 @media (min-width: 768px) {
   .header .button-container {
-    display: flex
-  }
-  .header .menu-icon {
     display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
   }
-
+  .ham-menu {
+    display: none;
+  }
 }
+
 .button-container {
   display: flex;
   background-color: #151515;
-  width: 250px;
-  height: 40px;
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px,
-  rgba(73, 136, 245, 0.5) 5px 10px 15px;
-  animation: slide 1s
+  animation: slide 1s;
 }
 
 .button {
@@ -155,12 +167,14 @@ nav {
   color: #fff;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
-  animation: slide 1s
+  animation: slide 1s;
 }
 
 .button:hover {
   transform: translateY(-3px);
 }
+
+
 
 
 /* Main page social links */
@@ -191,7 +205,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #1e1e1e;
   text-align: center;
   transform: perspective(1000px) rotate(-30deg) skew(25deg)
   translate(0, 0);
@@ -205,7 +219,7 @@ nav {
   left: -10px;
   height: 100%;
   width: 10px;
-  background: #b1b1b1;
+  background: #151515;
   transition: all 0.4s ease;
   transform: rotate(0deg) skewY(-45deg);
 }
@@ -217,7 +231,7 @@ nav {
   left: -5px;
   height: 10px;
   width: 100%;
-  background: #b1b1b1;
+  background: rgba(215, 215, 215, 0.17);
   transition: all 0.4s ease;
   transform: rotate(0deg) skewX(-45deg);
 }
@@ -301,11 +315,9 @@ nav {
   margin-top: 50px;
 }
 .pinned-projects {
-  animation: slide 1s;
-  position: absolute;
+  animation: slide 2s;
   text-align: center;
-  margin-top: 110px;
-  margin-left: 42%;
+  margin-top: 75px;
 }
 .bio-max {
   max-width: 500px;
@@ -396,4 +408,219 @@ nav {
 }
 
 
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.notification-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.notification-link {
+  display: block;
+  text-decoration: none;
+  margin: 0 10px;
+  width: 18rem;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  animation: slide 2s;
+  width: 100%;
+  height: 8rem;
+  background: #29292c;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  --gradient: linear-gradient(to bottom, #4988F57F, rgba(61, 131, 255, 0.62), rgba(73, 136, 245, 0.85));
+  --color: #b7b7b7;
+}
+
+.notification:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #18181b;
+  z-index: 2;
+}
+
+.notification:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification:hover:after {
+  transform: translateX(0.15rem);
+}
+
+.notititle {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notititle {
+  transform: translateX(0.15rem);
+}
+
+.notibody {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notibody {
+  transform: translateX(0.25rem);
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow {
+  z-index: 3;
+}
+
+.notiborderglow {
+  z-index: 1;
+}
+
+.notification:hover .notiglow {
+  opacity: 0.1;
+}
+
+.notification:hover .notiborderglow {
+  opacity: 0.1;
+}
+
+.note {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .notification-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notification-link {
+    margin: 10px 0;
+  }
+}
+
+.gear-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gear-category {
+  margin-bottom: 2rem;
+}
+
+.gear-category h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Flexbox container for gear items */
+.gear-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Styling for individual gear items */
+.gear-item {
+  flex: 1 1 calc(50% - 1rem);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.gear-info {
+  flex: 1;
+}
+
+.gear-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.gear-info p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+/* Styling for the Get button */
+.get-button {
+  background-color: rgba(215, 215, 215, 0.17);
+  border: none;
+  color: #fff;
+  padding: 0.25rem .75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-button:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gear-item {
+    flex: 1 1 100%;
+  }
+}
+
+.gear-image {
+  width: 25px;
+  height: 25px;
+}
