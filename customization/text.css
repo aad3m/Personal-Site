@@ -2,50 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     margin: 0;
     padding: 0;
     background-color: #151515;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: opacity 1s ease;
     color: #8f8f8f;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    padding-left: 20px; /* Add padding to the left */
+    display: grid;
+    place-items: center;
+    align-self: flex-start;
+
 }
 
-p, h1, h2, h3, h4 {
+p,h1, h2,h3 ,h4{
     margin: 0;
     padding: 2%;
     background-color: transparent;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #b7b7b7;
+    animation: slide 2s ease-out;
 }
-
-a {
+a{
     text-decoration: none;
     color: rgba(73, 136, 245, 0.85);
 }
 
+
+
+/* Apply styles to the header */
 header {
     background-color: transparent;
-    color: #fff;
-    text-align: left;
-    width: 100%;
+    color: transparent;
+    text-align: center;
 }
-
 .title {
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s;
+    text-align: center;
     margin-top: 50px;
-    text-align: left; /* Align text to the left */
 }
 
 .bio-max {
     max-width: 500px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
-    text-align: left;
+    margin: 0 auto;
+    animation: slide 1s;
+    text-align: center;
 }
-
 .bio {
     text-align: left;
     margin-top: 20px;
@@ -53,7 +56,7 @@ header {
 
 .header {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: center;
     align-items: center;
 }
 
@@ -61,29 +64,27 @@ header {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 @keyframes slide {
     from {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translatey(10%);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
-
 .about-me {
     max-width: 500px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
     text-align: left;
     margin-top: 20px;
 }
 
 .title-about {
-    margin-top: 50px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
-    text-align: left; /* Align text to the left */
+    margin-top: 5%;
+    animation: slide 2s;
+    text-align: left;
 }
 
 .about-p {
@@ -95,36 +96,37 @@ header {
     font-size: 18px;
     line-height: 30px;
     text-align: left;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
 }
+
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    bottom: -450px;
+    width: 125%;
+    margin-left: -10%;
 }
-
 .footer p {
     margin: 0;
     color: rgba(87, 87, 87, 0.78);
 }
 
+
 /* Program List */
 .program-lang {
     max-width: 800px;
     padding: 2rem;
-    border-radius: 8px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
-    text-align: left; /* Align text to the left */
+    animation: slide 2s ease-out;
+    text-align: left;
 }
 
 .program-lang h2 {
     margin-bottom: 1rem;
     color: #cfcfcf;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .program-list {
@@ -133,14 +135,14 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .program-list li {
     position: relative;
     padding-left: 1.5rem;
     color: #ffffff;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
 }
 
 .program-list li::before {
