@@ -1,0 +1,79 @@
+.gear-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gear-category {
+    margin-bottom: 2rem;
+}
+
+.gear-category h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Flexbox container for gear items */
+.gear-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Styling for individual gear items */
+.gear-item {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gear-info {
+    flex: 1;
+}
+
+.gear-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.gear-info p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Styling for the Get button */
+.get-button {
+    background-color: rgba(215, 215, 215, 0.17);
+    border: none;
+    color: #fff;
+    padding: 0.25rem .75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-button:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gear-item {
+        flex: 1 1 100%;
+    }
+}
+
+.gear-image {
+    width: 120px;
+    height: 120px;
+}

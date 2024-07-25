@@ -1,0 +1,63 @@
+.experience {
+    padding: 20px;
+    animation: slide 2s ease-out;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline ul li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline ul li .content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+
+}
+
+.timeline ul li .time {
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline ul li .time h4 {
+    margin: 0;
+}
+
+.timeline ul li:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: #4169e1;
+    top: 0;
+    bottom: 0;
+    left: 75px;
+    margin-left: -1.5px;
+}
+
+.timeline ul li .time:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #4169e1;
+    border-radius: 50%;
+    left: 66px;
+    top: 20px;
+}
