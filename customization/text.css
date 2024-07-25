@@ -22,7 +22,7 @@ p,h1, h2,h3 ,h4{
     background-color: transparent;
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #b7b7b7;
-    animation: slide 2s ease-out;
+    animation: slide 2s;
 }
 a{
     text-decoration: none;
@@ -46,7 +46,7 @@ header {
 .bio-max {
     max-width: 500px;
     margin: 0 auto;
-    animation: slide 1s;
+    animation: slide 2s;
     text-align: center;
 }
 .bio {
@@ -75,7 +75,7 @@ header {
     }
 }
 .about-me {
-    max-width: 500px;
+    max-width: 750px;
     animation: slide 2s ease-out;
     text-align: left;
     margin-top: 20px;
@@ -83,7 +83,7 @@ header {
 
 .title-about {
     margin-top: 5%;
-    animation: slide 2s;
+    animation: slide 2.5s ease-out;
     text-align: left;
 }
 
