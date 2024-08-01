@@ -8,10 +8,9 @@ This personal website is currently a work in progress using HTML,CSS, and JS. It
 
 ## Features
 - Responsive Design
-- Portfolio Section
-- Blog Page
+- Home Page
 - Resume/About Me Page
-- Contact Form
+- UI Page (WIP)
 
 ## Installation 
 To set up the project locally, follow these steps:
