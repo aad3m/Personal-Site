@@ -42,6 +42,30 @@ header {
     text-align: center;
     margin-top: 50px;
 }
+.craft-title {
+    animation: slide 2.5s ease-out;
+    text-align: left;
+    margin-top: 10%;
+}
+.craft {
+    max-width: 500px;
+    animation: slide 2s ease-out;
+    text-align: left;
+    font-weight: lighter;
+    color: #b7b7b7;
+}
+
+.login-ui {
+    text-align: left;
+    margin-top: 10%;
+    margin-left: -200%;
+}
+.login-date {
+    text-align: left;
+    margin-left: -199%;
+    font-weight: lighter;
+    font-size: 20px;
+}
 
 .bio-max {
     max-width: 500px;
