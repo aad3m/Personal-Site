@@ -48,13 +48,12 @@ header {
     margin-top: 10%;
 }
 .craft {
-    max-width: 100%; /* Ensure the text doesn't exceed the container width */
+    max-width: 100%;
     animation: slide 2s ease-out;
     text-align: left;
     font-weight: lighter;
     color: #b7b7b7;
     line-height: 1.5; /* Increase line height to prevent smashing */
-    word-wrap: break-word; /* Ensure text wraps properly */
 }
 
 
@@ -76,7 +75,6 @@ header {
     animation: slide 2s;
     text-align: center;
     font-weight: lighter;
-
 }
 .bio {
     text-align: left;
