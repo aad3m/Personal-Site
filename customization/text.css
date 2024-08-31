@@ -55,7 +55,7 @@ header {
     text-align: center;
     font-weight: lighter;
     color: #b7b7b7;
-    line-height: 1.5; /* Increase line height to prevent smashing */
+    line-height: 1.5;
 }
 
 /* Media query for mobile devices */
@@ -64,7 +64,7 @@ header {
         display: flex;
         justify-content: flex-end;
         text-align: right;
-        padding-top: 3%; /* Adjust padding as needed */
+        padding-top: 3%;
     }
 
     .craft a {
@@ -75,10 +75,19 @@ header {
 
     .craft span {
         margin-left: 0;
-        margin-right: 10px; /* Adjust margin as needed */
+        margin-right: 10px;
         font-weight: lighter;
         color: #8d8d8d;
         text-align: right;
+    }
+    .craft h4 a span:first-child {
+        font-weight: bold;
+        color: #b7b7b7;
+    }
+
+    .craft h4 a span:last-child {
+        font-weight: lighter;
+        color: #8d8d8d;
     }
 }
 

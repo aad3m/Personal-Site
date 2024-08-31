@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap;
 }
 
 .pinned-link {
