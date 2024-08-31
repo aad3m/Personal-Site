@@ -4,15 +4,14 @@
 
 body {
     margin: 0;
-    padding: 0;
     background-color: #151515;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: opacity 1s ease;
     color: #8f8f8f;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    padding-left: 20px; /* Add padding to the left */
+    align-items: flex-start;
+    padding: 0 0 0 20px;
 }
 
 p, h1, h2, h3, h4 {
@@ -35,14 +34,14 @@ header {
 }
 
 .title {
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
     margin-top: 50px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .bio-max {
     max-width: 500px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
     text-align: left;
 }
 
@@ -53,7 +52,7 @@ header {
 
 .header {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -75,15 +74,15 @@ header {
 
 .about-me {
     max-width: 500px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
     text-align: left;
     margin-top: 20px;
 }
 
 .title-about {
     margin-top: 50px;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
-    text-align: left; /* Align text to the left */
+    animation: slide 2s ease-out;
+    text-align: left;
 }
 
 .about-p {
@@ -95,7 +94,7 @@ header {
     font-size: 18px;
     line-height: 30px;
     text-align: left;
-    animation: slide 2s ease-out; /* Adjust animation duration and easing */
+    animation: slide 2s ease-out;
 }
 
 /* Footer */
