@@ -56,6 +56,27 @@ header {
     font-weight: lighter;
     color: #b7b7b7;
     line-height: 1.5;
+    font-size: 20px
+}
+
+
+.crafth4 a {
+    color:#b7b7b7;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.crafth4 a:hover {
+    color: #868686;
+}
+
+.crafth4 a:hover span:last-child {
+    color: #696868;
+}
+
+.craftspan {
+    font-weight: lighter;
+    color: #8d8d8d;
 }
 
 /* Media query for mobile devices */
@@ -63,7 +84,7 @@ header {
     .craft h4 {
         display: flex;
         justify-content: flex-end;
-        text-align: right;
+        text-align: center;
         padding-top: 3%;
     }
 
@@ -72,6 +93,13 @@ header {
         width: 100%;
         color: #b7b7b7;
     }
+    .crafth4 {
+        color:#b7b7b7;
+        display: block;
+        justify-content: space-between;
+        width: 100%;
+    }
+
 
     .craft span {
         margin-left: 0;
@@ -83,11 +111,13 @@ header {
     .craft h4 a span:first-child {
         font-weight: bold;
         color: #b7b7b7;
+        text-align: center;
     }
 
     .craft h4 a span:last-child {
         font-weight: lighter;
         color: #8d8d8d;
+        text-align: center;
     }
 }
 
