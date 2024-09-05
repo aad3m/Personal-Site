@@ -60,6 +60,14 @@ header {
 }
 
 
+.abouthover {
+    color: #4169e1;
+}
+.abouthover:hover {
+    color: #86a3ff;
+}
+
+
 .crafth4 a {
     color:#b7b7b7;
     display: flex;
