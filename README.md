@@ -10,7 +10,7 @@ This personal website is currently a work in progress using HTML,CSS, and JS. It
 - Responsive Design
 - Home Page
 - Resume/About Me Page
-- UI Page (WIP)
+- Crafts Page
 
 ## Installation 
 To set up the project locally, follow these steps:
