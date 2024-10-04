@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
+
+}
+
+main {
+    display: flex;
+    flex: .1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.flip-card {
+    width: 500px;
+    aspect-ratio: 16/9;
+    perspective: 3200px;
+
+}
+
+.flip-card__front h3{
+    margin-top: 33%;
+    font-size: 25px;
+    margin-left: 8%;
+    font-weight: normal;
+    color: rgba(38, 38, 38, 0.51);
+
+}
+
+.apple-logo {
+    scale: .2;
+    position: absolute;
+    margin-top: -75px;
+    margin-left: -75px;
+
+}
+
+.sim-card {
+    scale: .2;
+    margin-left: 290px;
+    margin-top: 65px;
+    position: absolute;
+
+}
+
+.flip-card__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+    font-size: 40px;
+    display: flex;
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+}
+.flip-card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+}
+
+.flip-card__front {
+    transform: rotateX(0deg);
+    background: whitesmoke;
+    color: gray;
+}
+
+.flip-card__back {
+    transform: rotateX(-180deg);
+    background: whitesmoke;
+    color: rgba(38, 38, 38, 0.51);
+}
+
+.flip-card:hover .flip-card__front {
+    transform: rotateX(180deg);
+}
+.flip-card:hover .flip-card__back {
+    transform: rotateX(0deg);
+}
+
+.flip-card-description {
+    font-family: "Poppins", sans-serif;
+    margin: 35px;
+}
+
