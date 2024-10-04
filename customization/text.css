@@ -133,6 +133,7 @@ header {
 .login-ui {
     text-align: center;
     margin-top: 10%;
+    font-size: 30px;
 }
 .login-date {
     text-align: center;

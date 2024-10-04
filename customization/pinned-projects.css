@@ -100,7 +100,7 @@
     width: 20rem;
     height: 20rem;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle closest-side at center, white, transparent);
+    background: radial-gradient(circle closest-side at center, rgba(255, 255, 255, 0.47), transparent);
     opacity: 0;
     transition: opacity 300ms ease;
 }
