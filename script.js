@@ -6,13 +6,13 @@ document.querySelector('.ham-menu').addEventListener('click', function() {
 
 
 window.addEventListener('load', function() {
-    var loadingScreen = document.getElementById('loading-screen');
-    var mainContent = document.querySelectorAll('#main-content');
+    let loadingScreen = document.getElementById('loading-screen');
+    let mainContent = document.querySelectorAll('#main-content');
 
     // Check if the loading screen has been shown before
     if (!sessionStorage.getItem('loadingScreenShown')) {
         // Show the loading screen and set a delay (milliseconds)
-        var delay = 2000
+        let delay = 2000;
         setTimeout(function() {
             loadingScreen.style.display = 'none';
             mainContent.forEach(function(content) {
