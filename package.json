@@ -22,6 +22,6 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "framer-motion": "^11.3.17"
+    "framer-motion": "^11.5.6"
   }
 }
