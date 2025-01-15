@@ -134,3 +134,23 @@
 .social .social-item .social-link:hover {
     color: #ffffff;
 }
+
+.social .social-item:nth-child(5) a {
+    color: #f13a3a;
+}
+
+.social .social-item:nth-child(5):hover a {
+    background: #ea2b2b;
+}
+
+.social .social-item:nth-child(5):hover a::before {
+    background: #ff0000;
+}
+
+.social .social-item:nth-child(5):hover a::after {
+    background: #fa5c5c;
+}
+
+.social .social-item .social-link:hover {
+    color: #ffffff;
+}
